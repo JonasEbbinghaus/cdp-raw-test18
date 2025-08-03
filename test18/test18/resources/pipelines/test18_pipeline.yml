@@ -1,0 +1,8 @@
+resources:
+  pipelines:
+    test18_pipeline:
+      name: test18_pipeline
+      target: test18_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../../src/dlt_pipeline.ipynb
